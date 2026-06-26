@@ -24,17 +24,18 @@ const HIGHLIGHT = "#F59E0B";
 
 const loggedOutRoutes = [
   { label: "Home", href: "/" },
-  { label: "Explore", href: "#explore" },
-  { label: "About", href: "#about" },
+  { label: "Explore", href: "/explore" },
+  { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];
 
 const loggedInRoutes = [
   { label: "Home", href: "/" },
-  { label: "Explore", href: "#explore" },
-  { label: "Dashboard", href: "#dashboard" },
-  { label: "Blog", href: "#blog" },
-  { label: "Support", href: "#support" },
+  { label: "Explore", href: "/explore" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
+  { label: "Support", href: "/support" },
+  { label: "Privacy", href: "/privacy" },
 ];
 
 export default function Navbar() {
@@ -190,7 +191,7 @@ export default function Navbar() {
                       {/* Menu items */}
                       {[
                         { icon: User, label: "Profile", href: "#profile" },
-                        { icon: LayoutDashboard, label: "Dashboard", href: "#dashboard" },
+                        { icon: LayoutDashboard, label: "Dashboard", href: "/dashboard" },
                         { icon: Settings, label: "Settings", href: "#settings" },
                       ].map(({ icon: Icon, label, href }) => (
                         <a
