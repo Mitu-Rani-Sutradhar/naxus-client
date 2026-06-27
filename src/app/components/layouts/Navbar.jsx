@@ -25,8 +25,8 @@ const HIGHLIGHT = "#F59E0B";
 const loggedOutRoutes = [
   { label: "Home", href: "/" },
   { label: "Explore", href: "/explore" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const loggedInRoutes = [
