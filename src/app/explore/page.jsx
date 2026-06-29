@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const fetchNaxusData = async () => {
-  const res = await axios.get("http://localhost:4000/api/naxusdata");
+  const res = await axios.get("https://naxus-server.vercel.app/api/naxusdata");
   return res.data;
 };
 

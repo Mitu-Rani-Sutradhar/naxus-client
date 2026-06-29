@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 
 const fetchNaxusDataById = async (id) => {
-  const res = await axios.get(`http://localhost:4000/api/naxusdata/${id}`);
+  const res = await axios.get(`https://naxus-server.vercel.app/api/naxusdata/${id}`);
   return res.data; // { success, data }
 };
 
